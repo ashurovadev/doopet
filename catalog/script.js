@@ -1,5 +1,5 @@
 
-const allProducts = document.querySelectorAll(".add-to-cart");
+const allProducts = document.querySelectorAll(".product-card");
 
 allProducts.forEach(element => {
     element.onclick = () => {
