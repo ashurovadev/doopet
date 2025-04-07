@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contact">
+            <a href="#" class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Sergeli ko'chasi, 12-uy, Toshkent</p>
+            </a>
+            <a href="#" class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@doopet.com</p>
+            </a>
+            <a href="#" class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <p>+998 78 366 36 36</p>
+            </a>
+            <div class="account">
+                <i class="fa-solid fa-user"></i>
+                <p>Shaxsiy hisob</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <a href="#" class="liked">
+                <i class="fa-solid fa-heart"></i>
+                <p>Tanlangan maxsulotlar</p>
+            </a>
+        </div>
+        <div class="main_bar">
+            <a href="/" class="logo">
+                <img src="../src/img/logo.svg" alt="logo">
+                <h1>DooPet</h1>
+            </a>
+            <div class="menus">
+                <ul>
+                    <li><a href="#">Aksiya</a></li>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Yetkazib berish va to'lov</a></li>
+                    <li><a href="#">Bog'lanish</a></li>
+                </ul>
+                <img src="../src/img/bars.svg" alt="bars" class="bars">
+            </div>
+        </div>
+        <div class="sub_header">
+            <div class="catalog">
+                <img src="../src/img/small_bars.svg" alt="bars" class="bars">
+                <p>Katalog</p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Saytdan qidirish...">
+                <i class="isearch fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart">
+                <img src="../src/img/cart.svg" alt="cart" class="icart">
+                <p>Tovarlar 2 (68 000 so'm)</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="catalog-container">
+            <div class="sidebar">
+                <div class="filter-section">
+                    <h3>Цена</h3>
+                    <div class="price-radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="price-all" name="price-range" checked>
+                            <label for="price-all">Все цены</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="price-15-30" name="price-range">
+                            <label for="price-15-30">15€ - 30€</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="price-30-45" name="price-range">
+                            <label for="price-30-45">30€ - 45€</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="price-45-60" name="price-range">
+                            <label for="price-45-60">45€ - 60€</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Производители</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vigor">
+                            <label for="vigor">VIGOR</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="beef">
+                            <label for="beef">Beef</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="truefish">
+                            <label for="truefish">TrueFish</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Размер упаковки</h3>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="2kg" checked>
+                            <label for="2kg">2 kg</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="3kg">
+                            <label for="3kg">3 kg</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="5kg">
+                            <label for="5kg">5 kg</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="10kg">
+                            <label for="10kg">10 kg</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="catalog-content">
+                <div class="catalog-header">
+                    <div class="view-options">
+                        <button class="view-btn grid active"><i class="fa-solid fa-grip"></i></button>
+                        <button class="view-btn list"><i class="fa-solid fa-list"></i></button>
+                    </div>
+                    <div class="sort-options">
+                        <select>
+                            <option>Сортировка</option>
+                            <option>По умолчанию</option>
+                            <option>По цене</option>
+                        </select>
+                    </div>
+                    <div class="items-per-page">
+                        <span>Показать:</span>
+                        <select>
+                            <option>12</option>
+                            <option>24</option>
+                            <option>36</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Organic egg layer pellets</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.55€</span>
+                                <span class="old-price">3.65€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для кошек">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для кошек KMR Foofi 12oz</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.45€</span>
+                                <span class="old-price">3.45€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Trient Single animal protein</h4>
+                            <div class="product-price">
+                                <span class="current-price">3€</span>
+                                <span class="old-price">4.25€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Organic egg layer pellets</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.55€</span>
+                                <span class="old-price">3.65€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для кошек">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для кошек KMR Foofi 12oz</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.45€</span>
+                                <span class="old-price">3.45€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Trient Single animal protein</h4>
+                            <div class="product-price">
+                                <span class="current-price">3€</span>
+                                <span class="old-price">4.25€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Organic egg layer pellets</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.55€</span>
+                                <span class="old-price">3.65€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для кошек">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для кошек KMR Foofi 12oz</h4>
+                            <div class="product-price">
+                                <span class="current-price">2.45€</span>
+                                <span class="old-price">3.45€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 9 -->
+                    <div class="product-card">
+                        <div class="product-labels">
+                            <span class="label hit">Хит</span>
+                            <span class="label new">Новинка</span>
+                        </div>
+                        <div class="product-image">
+                            <img src="../src/img/corm.jpeg" alt="Корм для собак">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Корм для собак Trient Single animal protein</h4>
+                            <div class="product-price">
+                                <span class="current-price">3€</span>
+                                <span class="old-price">4.25€</span>
+                            </div>
+                            <div class="product-actions">
+                                <div class="quantity-selector">
+                                    <button class="qty-btn minus">-</button>
+                                    <input type="text" value="2" class="qty-input">
+                                    <button class="qty-btn plus">+</button>
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="page-item active">1</a>
+                    <a href="#" class="page-item">2</a>
+                    <a href="#" class="page-item">3</a>
+                    <a href="#" class="page-item">></a>
+                    <a href="#" class="page-item">>></a>
+                    <div class="pagination-info">Показано 1-9 из 11 (1 страница)</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subscribe">
+            <div class="left">
+                <h2>Xabardor bo'ling aksiya va yangiliklarimiz</h2>
+                <p>Tarqatma xabarlarga obuna bo'ling va chegirmalar haqida birinchilardan bo'lib bilib oling</p>
+                <div class="field">
+                    <input type="email" placeholder="E-pochtangizni kiriting...">
+                    <button class="send">Yuborish</button>
+                </div>
+                <img src="../src/img/dog.png" alt="kuchuk rasmi" class="dog">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <a href="#" class="logo">
+                <img src="../src/img/logo.svg" alt="logo">
+                <h3>DooPet</h3>
+            </a>
+            <p>Biz uy hayvonlaringizni yuqori sifatli ozuqa bilan ta'minlash bo'yicha yetakchimiz. Bizning vazifamiz - bozordagi eng yaxshi mahsulotlar orqali hayvonlaringizga g'amxo'rlik va farovonlikni ta'minlashdir.</p>
+        </div>
+        <div class="links">
+            <div class="products">
+                <h3>DOOPET maxsulotlari</h3>
+                <ul>
+                    <li><a href="#">Mushuklar uchun korm</a></li>
+                    <li><a href="#">Kuchuklar uchun korm</a></li>
+                    <li><a href="#">Kuchuklar uchun konservalar</a></li>
+                    <li><a href="#">Mushuklar uchun konservalar</a></li>
+                    <li><a href="#">Itlar uchun shirinliklar</a></li>
+                    <li><a href="#">Hojatxona to'ldirgichlari</a></li>
+                    <li><a href="#">Tashish uchun konteynerlar</a></li>
+                </ul>
+            </div>
+            <div class="about_site">
+                <h3>Sayt haqida</h3>
+                <ul>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Yetkazib berish</a></li>
+                    <li><a href="#">To'lov</a></li>
+                    <li><a href="#">Maxfiylik siyosati
+                        va foydalanish shartlari</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i><p>Sergeli ko'chasi, 12-uy, Toshkent</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i><p>info@doopet.com</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i><p>+998 78 366 36 36</p></a></li>
+                </ul>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
