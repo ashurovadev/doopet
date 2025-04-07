@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="contact">
             <a href="#" class="location">
@@ -33,105 +34,117 @@
             </a>
         </div>
         <div class="main_bar">
-            <a href="/" class="logo">
-                <img src="../src/img/logo.svg" alt="logo">
-                <h1>DooPet</h1>
-            </a>
-            <div class="menus">
-                <ul>
-                    <li><a href="#">Aksiya</a></li>
-                    <li><a href="#">Biz haqimizda</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Yetkazib berish va to'lov</a></li>
-                    <li><a href="#">Bog'lanish</a></li>
-                </ul>
-                <img src="../src/img/bars.svg" alt="bars" class="bars">
+            <div class="main_bar-container">
+                <a href="/" class="logo">
+                    <img src="../src/img/logo.svg" alt="logo">
+                    <h1>DooPet</h1>
+                </a>
+                <div class="menus">
+                    <ul>
+                        <li><a href="#">Aksiya</a></li>
+                        <li><a href="#">Biz haqimizda</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Yetkazib berish va to'lov</a></li>
+                        <li><a href="#">Bog'lanish</a></li>
+                    </ul>
+                    <img src="../src/img/bars.svg" alt="bars" class="bars">
+                </div>
             </div>
         </div>
         <div class="sub_header">
-            <button class="catalog" onclick="window.location.href = `/catalog/`">
-                <img src="../src/img/small_bars.svg" alt="bars" class="bars">
-                <p>Katalog</p>
-            </button>
-            <div class="search">
-                <input type="text" placeholder="Saytdan qidirish...">
-                <i class="isearch fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="cart">
-                <img src="../src/img/cart.svg" alt="cart" class="icart">
-                <p>Tovarlar 2 (68 000 so'm)</p>
+            <div class="sub_header-container">
+                <button class="catalog" onclick="window.location.href = `/catalog/`">
+                    <img src="../src/img/small_bars.svg" alt="bars" class="bars">
+                    <p>Katalog</p>
+                </button>
+                <div class="search">
+                    <input type="text" placeholder="Saytdan qidirish...">
+                    <i class="isearch fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="cart">
+                    <img src="../src/img/cart.svg" alt="cart" class="icart">
+                    <p>Tovarlar 2 (68 000 so'm)</p>
+                </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="navigation">
-            <i class="fa-solid fa-house"></i>
-            <i class="right fa-solid fa-chevron-right"></i>
-            <p>Kuchuklar uchun</p>
-            <i class="right fa-solid fa-chevron-right"></i>
-            <p>Kuchuklar uchun korm Good Dog Reward</p>
-        </div>
 
-        
-        <div class="product">
-            <div class="details">
-                <div class="pictures">
-                    <img src="../src/img/corm.jpeg" alt="Corm" class="main_image">
-                    <div class="images">
-                        <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
-                        <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
-                        <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
-                        <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
-                    </div>
-                </div>
-                <div class="detail">
-                    <h2>Kuchuklar uchun korm Good Dog Reward</h2>
-                    <div class="indetail">
-                        <div class="price">
-                            <h3>45 990 so'm</h3>
-                            <p>57 950 so'm</p>
-                        </div>
-                        <div class="buttons">
-                            <div class="counter">
-                                <button class="minus">-</button>
-                                <p class="count">2</p>
-                                <button class="plus">+</button>
-                            </div>
-                            <button class="add_cart">Savatchaga qo'shish</button>
-                            <i class="fa-regular fa-heart like"></i>
-                        </div>
-                        <div class="info">
-                            <div class="line">
-                                <h3 class="category">Seriya:</h3>
-                                <p class="value">LEDF01</p>
-                            </div>
-                            <div class="line">
-                                <h3 class="category">Ishlab chiqaruvchi:</h3>
-                                <p class="value">BEEF</p>
-                            </div>
-                            <div class="line">
-                                <h3 class="category">Mavjudlik:</h3>
-                                <p class="value">Omborda mavjud</p>
-                            </div>
-                            <div class="line">
-                                <h3 class="category">Narxi:</h3>
-                                <p class="value">45 990 so'm</p>
-                            </div>
-                        </div>
-                        <div class="button2">
-                            <button class="ask">
-                                <i class="fa-regular fa-circle-question"></i>
-                                <p>Savol so'rash</p>
-                            </button>
-                            <a href="#" class="delivery">
-                                <i class="fa-solid fa-truck"></i>
-                                <p>Yetkazib berish haqida ma'lumot</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <main>
+
+        <section class="navigation">
+            <div class="navigation-container">
+                <i class="fa-solid fa-house"></i>
+                <i class="right fa-solid fa-chevron-right"></i>
+                <p>Kuchuklar uchun</p>
+                <i class="right fa-solid fa-chevron-right"></i>
+                <p>Kuchuklar uchun korm Good Dog Reward</p>
             </div>
-            <section class="section3">
+        </section>
+
+        <section class="product">
+            <div class="product-container">
+                <div class="details">
+                    <div class="pictures">
+                        <img src="../src/img/corm.jpeg" alt="Corm" class="main_image">
+                        <div class="images">
+                            <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
+                            <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
+                            <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
+                            <img src="../src/img/corm.jpeg" alt="rasmcha" class="small_image">
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h2>Kuchuklar uchun korm Good Dog Reward</h2>
+                        <div class="indetail">
+                            <div class="price">
+                                <h3>45 990 so'm</h3>
+                                <p>57 950 so'm</p>
+                            </div>
+                            <div class="buttons">
+                                <div class="counter">
+                                    <button class="minus">-</button>
+                                    <p class="count">2</p>
+                                    <button class="plus">+</button>
+                                </div>
+                                <button class="add_cart">Savatchaga qo'shish</button>
+                                <i class="fa-regular fa-heart like"></i>
+                            </div>
+                            <div class="info">
+                                <div class="line">
+                                    <h3 class="category">Seriya:</h3>
+                                    <p class="value">LEDF01</p>
+                                </div>
+                                <div class="line">
+                                    <h3 class="category">Ishlab chiqaruvchi:</h3>
+                                    <p class="value">BEEF</p>
+                                </div>
+                                <div class="line">
+                                    <h3 class="category">Mavjudlik:</h3>
+                                    <p class="value">Omborda mavjud</p>
+                                </div>
+                                <div class="line">
+                                    <h3 class="category">Narxi:</h3>
+                                    <p class="value">45 990 so'm</p>
+                                </div>
+                            </div>
+                            <div class="button2">
+                                <button class="ask">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    <p>Savol so'rash</p>
+                                </button>
+                                <a href="#" class="delivery">
+                                    <i class="fa-solid fa-truck"></i>
+                                    <p>Yetkazib berish haqida ma'lumot</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <section class="section3">
+            <div class="section3-container">
                 <div class="description-reviews">
                     <div class="tabs">
                         <button class="tab active">Описание</button>
@@ -139,16 +152,19 @@
                     </div>
                     <div class="description-content">
                         <p>Наш корм для собак - это забота о вашем верном спутнике, выраженная в каждой грануле. Мы создаем уникальные рецепты, богатые натуральными ингредиентами, которые специально разработаны для удовлетворения потребностей вашей собаки в питательных веществах и вкусе. Наши продукты вдохновлены природой и разработаны с учетом здоровья и благополучия вашего пушистого друга. Каждая упаковка - это обещание качества и заботы. Подарите вашей собаке лучший опыт питания, который она заслуживает, с нашим кормом для собак.
-
+    
                             Натуральные ингредиенты: Наш корм для собак содержит только натуральные ингредиенты, без искусственных красителей, ароматизаторов или консервантов. Мы гордимся тем, что предлагаем вашей собаке высококачественное питание, которое способствует ее здоровью и благополучию.</p>
                         <ul>
                             <li><strong>Натуральные ингредиенты:</strong> Наш корм для собак содержит только натуральные ингредиенты, без искусственных красителей, ароматизаторов или консервантов. Мы гордимся тем, что предлагаем вашей собаке высококачественное питание, которое способствует ее здоровью и благополучию.</li>
                             <li><strong>Баланс питательных веществ:</strong> Наши рецепты разработаны с учетом оптимального баланса белков, углеводов, жиров и важных витаминов и минералов. Это помогает поддерживать здоровое тело.</li>
                         </ul>
                     </div>
-                    </div>
-            </section>
-            <section class="section4">
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="section4-container">
                 <div class="related-products-section">
                     <h2>O‘xshash mahsulotlar</h2>
                     <div class="products-grid">
@@ -215,11 +231,10 @@
             
                     </div>
                 </div>
-            </section>
-         
-        </div>
+            </div>
+        </section>
         
-        <div class="subscribe">
+        <section class="subscribe">
             <div class="left">
                 <h2>Xabardor bo‘ling aksiya va yangiliklarimiz</h2>
                 <p>Tarqatma xabarlarga obuna bo‘ling va chegirmalar haqida birinchilardan bo‘lib bilib oling</p>
@@ -229,50 +244,53 @@
                 </div>
                 <img src="../src/img/dog.png" alt="kuchuk rasmi" class="dog">
             </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <div class="about">
-            <a href="#" class="logo">
-                <img src="../src/img/logo.svg" alt="logo">
-                <h3>DooPet</h3>
-            </a>
-            <p>Biz uy hayvonlaringizni yuqori sifatli ozuqa bilan ta’minlash bo‘yicha yetakchimiz. Bizning vazifamiz - bozordagi eng yaxshi mahsulotlar orqali hayvonlaringizga g‘amxo‘rlik va farovonlikni ta’minlashdir.</p>
-        </div>
-        <div class="links">
-            <div class="products">
-                <h3>DOOPET maxsulotlari</h3>
-                <ul>
-                    <li><a href="#">Mushuklar uchun korm</a></li>
-                    <li><a href="#">Kuchuklar uchun korm</a></li>
-                    <li><a href="#">Kuchuklar uchun konservalar</a></li>
-                    <li><a href="#">Mushuklar uchun konservalar</a></li>
-                    <li><a href="#">Itlar uchun shirinliklar</a></li>
-                    <li><a href="#">Hojatxona to‘ldirgichlari</a></li>
-                    <li><a href="#">Tashish uchun konteynerlar</a></li>
-                </ul>
+        <div class="footer-container">
+            <div class="about">
+                <a href="/" class="logo">
+                    <img src="../src/img/logo.svg" alt="logo">
+                    <h3>DooPet</h3>
+                </a>
+                <p>Biz uy hayvonlaringizni yuqori sifatli ozuqa bilan ta’minlash bo‘yicha yetakchimiz. Bizning vazifamiz - bozordagi eng yaxshi mahsulotlar orqali hayvonlaringizga g‘amxo‘rlik va farovonlikni ta’minlashdir.</p>
             </div>
-            <div class="about_site">
-                <h3>Sayt haqida</h3>
-                <ul>
-                    <li><a href="#">Biz haqimizda</a></li>
-                    <li><a href="#">Yetkazib berish</a></li>
-                    <li><a href="#">To'lov</a></li>
-                    <li><a href="#">Maxfiylik siyosati
-                        va foydalanish shartlari</a></li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <h3>Kontakt</h3>
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-location-dot"></i><p>Sergeli ko'chasi, 12-uy, Toshkent</p></a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i><p>info@doopet.com</p></a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i><p>+998 78 366 36 36</p></a></li>
-                </ul>
-                <div class="socials">
-                    <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-telegram " style="font-size: 20px;"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+            <div class="links">
+                <div class="products">
+                    <h3>DOOPET maxsulotlari</h3>
+                    <ul>
+                        <li><a href="#">Mushuklar uchun korm</a></li>
+                        <li><a href="#">Kuchuklar uchun korm</a></li>
+                        <li><a href="#">Kuchuklar uchun konservalar</a></li>
+                        <li><a href="#">Mushuklar uchun konservalar</a></li>
+                        <li><a href="#">Itlar uchun shirinliklar</a></li>
+                        <li><a href="#">Hojatxona to‘ldirgichlari</a></li>
+                        <li><a href="#">Tashish uchun konteynerlar</a></li>
+                    </ul>
+                </div>
+                <div class="about_site">
+                    <h3>Sayt haqida</h3>
+                    <ul>
+                        <li><a href="#">Biz haqimizda</a></li>
+                        <li><a href="#">Yetkazib berish</a></li>
+                        <li><a href="#">To'lov</a></li>
+                        <li><a href="#">Maxfiylik siyosati
+                            va foydalanish shartlari</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i><p>Sergeli ko'chasi, 12-uy, Toshkent</p></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i><p>info@doopet.com</p></a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i><p>+998 78 366 36 36</p></a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram " style="font-size: 20px;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
