@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  /* border: 1px solid red; */
 }
 
 /* Global Styles */
@@ -65,10 +66,13 @@ body {
   color: #1d3971;
 }
 /* Search and Cart Section */
-.search-cart-section {
-  background-color: white;
-  padding: 10px 0;
+.search-cart-section{
   width: 100%;
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -226,65 +230,61 @@ Menu Toggle for Mobile .menu-toggle {
   transition: all 0.3s;
 }
 .group {
-  position: relative;
-  width: 1170px;
-  height: 221px;
-  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .box1 {
-  position: absolute;
   width: 285px;
   height: 221px;
   border: 1px solid #9d9d9d;
+  padding-left: 10px;
 }
-h3 {
-  margin-left: 60px;
-}
+
 p {
   text-align: center;
 }
 .box2 {
-  position: absolute;
   width: 285px;
   height: 221px;
-  margin-left: 294px;
   border: 1px solid #9d9d9d;
+  padding-left: 10px;
 }
 .box3 {
-  position: absolute;
   width: 285px;
   height: 221px;
-  margin-left: 590px;
   border: 1px solid #9d9d9d;
+  padding-left: 10px;
 }
 .box4 {
-  position: absolute;
   width: 285px;
   height: 221px;
-  margin-left: 885px;
   border: 1px solid #9d9d9d;
+  padding-left: 10px;
 }
 
 .kategory {
   width: 100%;
-  height: 420px;
-  margin-top: 40px;
+  height: 50dvh;
   background-color: #f4f4f4;
   display: flex;
-  gap: 200px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .prodaj {
-  width: 1210px;
+  width: 100%;
+  height: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
 }
 .logotip {
   width: 400px;
   height: 100px;
-  margin-left: 430px;
 }
 h2 {
   margin-left: 25px;
@@ -377,41 +377,41 @@ h4 {
   width: 245px;
   height: 40px;
 }
-.minus1 {
+.minus{
   width: 45px;
   height: 45px;
-  margin-top: -108px;
   background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.ikki1 {
+.ikki{
   width: 153px;
   height: 40px;
   background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.pilus1 {
+.pilus {
   width: 45px;
   height: 45px;
   background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-h1 {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-  font-size: large;
-}
-.tovar1 {
+
+.tovar{
   width: 245px;
   height: 44px;
   background-color: #1d3971;
   color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .single {
   width: 285px;
   height: 458px;
@@ -430,45 +430,7 @@ h4 {
   margin-top: 20px;
   margin-left: 20px;
 }
-.knopka {
-  width: 245px;
-  height: 40px;
-}
-.minus2 {
-  width: 45px;
-  height: 45px;
-  margin-top: -108px;
-  background-color: #efefef;
-}
-.ikki2 {
-  width: 153px;
-  height: 40px;
-  background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -42px;
-}
-.pilus2 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
-}
-h1 {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-  font-size: large;
-}
-.tovar2 {
-  width: 245px;
-  height: 44px;
-  background-color: #1d3971;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
-}
+
 .papa {
   width: 285px;
   height: 458px;
@@ -490,26 +452,7 @@ h4 {
   width: 245px;
   height: 40px;
 }
-.minus3 {
-  width: 45px;
-  height: 45px;
-  margin-top: -108px;
-  background-color: #efefef;
-}
-.ikki3 {
-  width: 153px;
-  height: 40px;
-  background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -43px;
-}
-.pilus3 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
-}
+
 h1 {
   text-align: center;
 }
@@ -544,45 +487,6 @@ h4 {
   margin-top: 20px;
   margin-left: 20px;
 }
-.knopka {
-  width: 245px;
-  height: 40px;
-}
-.minus4 {
-  width: 45px;
-  height: 45px;
-  margin-top: -108px;
-  background-color: #efefef;
-}
-.ikki4 {
-  width: 153px;
-  height: 40px;
-  background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -43px;
-}
-.pilus4 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
-}
-h1 {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-  font-size: large;
-}
-.tovar4 {
-  width: 245px;
-  height: 44px;
-  background-color: #1d3971;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
-}
 
 .purina {
   width: 285px;
@@ -602,16 +506,7 @@ h4 {
   margin-top: 20px;
   margin-left: 20px;
 }
-.knopka {
-  width: 245px;
-  height: 40px;
-}
-.minus5 {
-  width: 45px;
-  height: 45px;
-  margin-top: -108px;
-  background-color: #efefef;
-}
+
 .ikki5 {
   width: 153px;
   height: 40px;
@@ -625,21 +520,6 @@ h4 {
   background-color: #efefef;
   margin-left: 207px;
   margin-top: -42px;
-}
-h1 {
-  text-align: center;
-}
-h4 {
-  text-align: center;
-  font-size: large;
-}
-.tovar5 {
-  width: 245px;
-  height: 44px;
-  background-color: #1d3971;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
 }
 
 .tuna {
@@ -660,30 +540,7 @@ h4 {
   margin-top: 20px;
   margin-left: 20px;
 }
-.knopka {
-  width: 245px;
-  height: 40px;
-}
-.minus6 {
-  width: 45px;
-  height: 45px;
-  margin-top: -108px;
-  background-color: #efefef;
-}
-.ikki6 {
-  width: 153px;
-  height: 40px;
-  background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -43px;
-}
-.pilus6 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
-}
+
 h1 {
   text-align: center;
 }
@@ -691,14 +548,7 @@ h4 {
   text-align: center;
   font-size: large;
 }
-.tovar6 {
-  width: 245px;
-  height: 44px;
-  background-color: #1d3971;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
-}
+
 .catfish {
   width: 285px;
   height: 458px;
@@ -768,9 +618,7 @@ h4 {
   height: 100px;
   margin-left: 430px;
 }
-h2 {
-  margin-left: 25px;
-}
+
 .postup {
   width: 1210px;
   height: 937px;
@@ -791,43 +639,13 @@ h2 {
   margin-top: 20px;
   margin-left: 20px;
 }
-.knopka1 {
-  width: 245px;
-  height: 40px;
-}
-.minus1 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-}
-.ikki1 {
-  width: 153px;
-  height: 40px;
-  background-color: #efefef;
-  margin-left: 50px;
-  margin-top: -43px;
-}
-.pilus1 {
-  width: 45px;
-  height: 45px;
-  background-color: #efefef;
-  margin-left: 207px;
-  margin-top: -42px;
-}
+
 h1 {
   text-align: center;
 }
 h4 {
   text-align: center;
   font-size: large;
-}
-.tovar1 {
-  width: 245px;
-  height: 44px;
-  background-color: #1d3971;
-  color: #ffffff;
-  margin-top: 25px;
-  margin-left: 5px;
 }
 
 .pwdr1 {
@@ -1236,10 +1054,10 @@ h4 {
 .sikidka {
   width: 100%;
   background-color: #f4f4f4;
-  margin-top: 50px;
-  padding-bottom: 60px;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 110px;
 }
 
 .korm {
@@ -1247,16 +1065,12 @@ h4 {
   height: 397px;
   border-radius: 20px;
   background-color: #aa5cb7;
-  margin-left: 300px;
-  margin-top: 100px;
 }
 .milk {
   width: 588px;
   height: 397px;
   border-radius: 20px;
   background-color: #71bf34;
-  margin-left: 920px;
-  margin-top: 100px;
 }
 .text {
   width: 285px;
@@ -1279,16 +1093,15 @@ h4 {
   margin-top: 80px;
   margin-left: 300px;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .milk {
-  position: absolute;
   width: 588px;
   height: 397px;
   border-radius: 20px;
   background-color: #71bf34;
-  margin-left: 920px;
-  margin-top: 100px;
 }
 .text {
   width: 285px;
@@ -1311,8 +1124,23 @@ h4 {
   margin-top: 100px;
   margin-left: 300px;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.korm{
+  width: 550px;
+  height: 400px;
+  background: url(./image/Screenshot\ 2025-04-08\ at\ 20.56.45.png) center/cover;
+}
+
+.milk{
+  width: 550px;
+  height: 400px;
+  background: url(./image/Screenshot\ 2025-04-08\ at\ 20.57.03.png) center/cover;
+}
+
 .blog {
   max-width: 1920px;
   width: 100%;
@@ -1582,4 +1410,304 @@ footer h3 {
   aspect-ratio: 1/1;
   font-size: 20px;
   padding: 13px;
+}
+
+.first_image{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .blog-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box1, .box2, .box3, .box4 {
+    position: static;
+    width: 45%;
+    margin: 0;
+  }
+
+  .prodaj, .rekomend {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  .produk {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logotip, .logotip1 {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sikidka {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .korm, .milk {
+    position: static;
+    margin-left: 0;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .partner-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .subscribe {
+    padding-inline: 20px;
+  }
+
+  .left h2 {
+    font-size: 2rem;
+  }
+
+  .dog {
+    right: 5%;
+    height: 80%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .kategory{
+    display: none;
+  }
+
+  .top-bar .contact-info span {
+    margin: 5px 0;
+    display: block;
+  }
+
+  .top-bar .social-links {
+    margin-top: 10px;
+  }
+
+  .main-nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 1.5rem;
+  }
+
+  .search-cart-section .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .catalog-btn, .cart-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* .group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box1, .box2, .box3, .box4 {
+    width: 80%;
+  }
+
+  .kategory {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+  }
+
+  .kategory img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .produk {
+    gap: 15px;
+  }
+
+  .egg {
+    width: 45%;
+  }
+
+  .blog {
+    padding-inline: 20px;
+  }
+
+  .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partner {
+    padding-inline: 20px;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+  }
+
+  .field {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .field input, .send {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .dog {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  .box1, .box2, .box3, .box4 {
+    width: 100%;
+  }
+
+  .group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .egg {
+    width: 100%;
+  }
+
+  .korm, .milk {
+    width: 100%;
+  }
+
+  .text {
+    margin-left: 20px;
+    margin-top: -200px;
+    font-size: medium;
+  }
+
+  .panja, .panja1 {
+    margin-left: 50px;
+  }
+
+  .chegrma, .chegrma1 {
+    margin-left: 50px;
+  }
+
+  .partner-container {
+    gap: 20px;
+  }
+
+  .left h2 {
+    font-size: 1.2rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .contacts ul {
+    gap: 30px;
+  }
+
+  .blog-cards{
+    flex-direction: column;
+  }
+
 }
