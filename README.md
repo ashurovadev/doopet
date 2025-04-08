@@ -1,0 +1,1 @@
+hayvonlar ovqati sayti 
